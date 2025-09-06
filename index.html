@@ -1,17 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Earth</title>
     <!-- DaisyUI cdn -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- font awesome cdn -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
-    
+    <!-- Navbar Section -->
+    <nav>
+        <div>
+            <div class="navbar bg-base-100 shadow-sm bg-[#15803D]">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-2xl text-white hover:bg-green-950">Green Earth</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-white">
+                        <li><a>About</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Plant a Tree</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-[#15803D] bg-[#FACC15] rounded-3xl border-none">Plant a Tree</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="bg-[#CFF0DC]">
+        <div class="flex justify-normal items-center w-11/12 mx-auto pt-8 pb-2 md:pb-0">
+            <div class="flex-1"><img src="./assets/hero-leaf1.png" alt=""></div>
+            <div class="text-center flex-1 space-y-4">
+                <h1 class="text-xl md:text-4xl font-extrabold">Plant a Tree, Grow a Future</h1>
+                <p class="text-[#1F2937]/80 text-sm md:text-base font-medium">Join our mission to plant 1 million trees
+                    and make the Earth greener for future
+                    generations.</p>
+                <button class="btn text-[#15803D] bg-[#FACC15] rounded-3xl border-none">Get Involved</button>
+            </div>
+            <div class="flex-1"><img src="./assets/hero-leaf2.png" alt=""></div>
+        </div>
+
+    </section>
+
+    <!-- Choose Section -->
+    <section class=" bg-[#F0FDF4]">
+        <div class="w-11/12 mx-auto py-8">
+            <h1 class="py-5 text-center text-base md:text-3xl font-bold">Choose Your Trees</h1>
+            <div class="grid grid-cols-12">
+                <!-- Choose- Left -->
+                <div class="col-span-2 border border-green-400">
+                    <h2 class="text-xl font-bold pb-3">Categories</h2>
+                    <ul class="space-y-3 font-medium">
+                        <li>All Trees</li>
+                        <li>Fruit Trees</li>
+                        <li>Flowering Trees</li>
+                        <li>Shade Trees</li>
+                        <li>Medicinal Trees</li>
+                        <li>Timber Trees</li>
+                        <li>Evergreen Trees</li>
+                        <li>Ornamental Plants</li>
+                        <li>Bamboo</li>
+                        <li>Climbers</li>
+                        <li>Aquatic Plants</li>
+                    </ul>
+                </div>
+                <!-- Choose- Center -->
+                <div class="col-span-8 grid grid-cols-1 md:grid-cols-3 border border-orange-400">
+                    <div>
+                        <div class="card bg-base-100 shadow-sm">
+                            <figure class="px-1 md:px-10 pt-1 md:pt-10">
+                                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                    alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Card Title</h2>
+                                <p>A card component has a figure, a body part, and inside body there are title and
+                                    actions parts</p>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Choose- Right -->
+                <div class="col-span-2 border border-red-800 p-4">
+                    <h2 class="text-sm md:text-xl font-bold">Your Cart</h2>
+                    <div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-10 bg-[#F0FDF4]">
+        <h2 class="text-center py-5 text-base md:text-3xl font-bold">About the Campaign</h2>
+        <div class="w-7/12 mx-auto flex justify-between items-center flex-col md:flex-row">
+            
+            <div class="flex-1">
+                <img src="./assets/about.png" alt="">
+            </div>
+            <div class="flex-1 mt-5 md:mt-0">
+                <div>Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our
+                    start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore
+                    forests, create habitats for wildlife, and combat global warming.</div>
+                <ul class="list-disc list-inside space-y-2 pt-3">
+                    <li>Restoration of natural habitats</li>
+                    <li>Improvement of air quality</li>
+                    <li>Support for local communities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
