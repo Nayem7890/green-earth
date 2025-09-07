@@ -54,36 +54,22 @@
 
     </section>
 
-                                  <!-- Choose Section -->
+    <!-- Choose Section -->
     <section class=" bg-[#F0FDF4]">
         <div class="w-11/12 mx-auto py-8">
             <h1 class="py-5 text-center text-base md:text-3xl font-bold">Choose Your Trees</h1>
             <div class="grid grid-cols-12 gap-1 md:gap-3">
-                                     <!-- Choose- Left -->
-                <div class="col-span-2">
-                    <h2 class="text-xl font-bold pb-3">Categories</h2>
-                    <ul id="categoryContainer" class="space-y-3 font-medium">
-                        
+                <!-- Choose- Left -->
+                <div class="col-span-2 border border-red-900">
+                    <h2 class="text-sm md:text-2xl font-bold pb-3">Categories</h2>
+                    <ul id="categoryContainer" class="space-y-3 font-medium text-xs md:text-base text-[#1F2937]">
+
                     </ul>
                 </div>
-                               <!-- Choose- Center -->
-                <div class="col-span-8 grid grid-cols-1 md:grid-cols-3 border border-orange-400">
-                    <div>
-                        <div class="card bg-base-100 shadow-sm">
-                            <figure class="px-1 md:px-10 pt-1 md:pt-10">
-                                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                    alt="Shoes" class="rounded-xl" />
-                            </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Card Title</h2>
-                                <p>A card component has a figure, a body part, and inside body there are title and
-                                    actions parts</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Choose- Center -->
+                <div id="treesContainer" class="col-span-8 grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 rounded-md border border-orange-500">
+                    
+                
                 </div>
                 <!-- Choose- Right -->
                 <div class="col-span-2 border border-red-800 p-4">
@@ -101,7 +87,7 @@
     <section class="py-10 bg-[#F0FDF4]">
         <h2 class="text-center py-5 text-base md:text-3xl font-bold">About the Campaign</h2>
         <div class="w-7/12 mx-auto flex justify-between items-center flex-col md:flex-row">
-            
+
             <div class="flex-1">
                 <img src="./assets/about.png" alt="">
             </div>
@@ -117,64 +103,67 @@
             </div>
         </div>
     </section>
-                            <!-- Our Impact Section -->
-                
-                <section class=" bg-[#CFF0DC] py-10">
-                    <div class="w-8/12 mx-auto">
-                        <h2 class="text-center py-5 text-3xl font-bold">Our Impact</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 flex-wrap gap-3 pb-10">
-                        <div class="w-full text-center py-5 rounded-xl bg-white shadow-sm">
-                            <h2 class="text-[#15803D] text-2xl font-bold mb-2">500K+</h2>
-                            <p>Trees Planted</p>
-                        </div>
+    <!-- Our Impact Section -->
 
-                        <div class="w-full text-center py-5 rounded-xl bg-white shadow-sm">
-                            <h2 class="text-[#15803D] text-2xl font-bold mb-2">120+</h2>
-                            <p>Communities Involved</p>
-                        </div>
+    <section class=" bg-[#CFF0DC] py-10">
+        <div class="w-8/12 mx-auto">
+            <h2 class="text-center py-5 text-3xl font-bold">Our Impact</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 flex-wrap gap-3 pb-10">
+                <div class="w-full text-center py-5 rounded-xl bg-white shadow-sm">
+                    <h2 class="text-[#15803D] text-2xl font-bold mb-2">500K+</h2>
+                    <p>Trees Planted</p>
+                </div>
 
-                        <div class="w-full text-center py-5 rounded-xl bg-white shadow-sm">
-                            <h2 class="text-[#15803D] text-2xl font-bold mb-2">30+</h2>
-                            <p>Countries Reached</p>
-                        </div>
-                    </div>
-                    </div>
-                </section>
+                <div class="w-full text-center py-5 rounded-xl bg-white shadow-sm">
+                    <h2 class="text-[#15803D] text-2xl font-bold mb-2">120+</h2>
+                    <p>Communities Involved</p>
+                </div>
 
-                <!-- Plant a Tree Today Section -->
-         
-
-         <section class="bg-[#166534] pb-10">
-                 <h2 class="text-center pt-10 text-3xl font-bold text-white">Plant a Tree Today</h2>
-            <div class="w-full md:w-1/2 mx-auto flex justify-center text-center py-5">
-                  
-                <fieldset class="fieldset text-center bg-base-200 border-base-300 rounded-xl w-6/12 border bg-[#15803D] border-none p-2 md:p-6">
-  
-  <input type="email" class="input w-full" placeholder="Your Name" />
-  <input type="password" class="input w-full" placeholder="Your Email Address" />
-  <div class="dropdown dropdown-end">
-  <div tabindex="0" role="button" class="input w-full">Number of Trees  <i class="fa-solid fa-circle-chevron-down"></i></div>
-  <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-full p-2 shadow-sm">
-    <li><a>1 Tree = $5</a></li>
-    <li><a>5 Tree = $25</a></li>
-    <li><a>10 Tree = $5</a></li>
-  </ul>
-</div>
-
-  <button class="btn border-none btn-neutral mt-4 rounded-3xl text-[#15803D] bg-[#FACC15]">Donate Now</button>
-</fieldset>
+                <div class="w-full text-center py-5 rounded-xl bg-white shadow-sm">
+                    <h2 class="text-[#15803D] text-2xl font-bold mb-2">30+</h2>
+                    <p>Countries Reached</p>
+                </div>
             </div>
-         </section>
+        </div>
+    </section>
 
-                            <!-- Footer Section -->
-                    <footer>
-                        <div class="text-center py-6 bg-[#14532D] text-white">
-                            <h4>© 2025 Green Earth. All Rights Reserved.</h4>
-                        </div>
-                    </footer>
+    <!-- Plant a Tree Today Section -->
 
 
-         <script src="./script.js"></script>
+    <section class="bg-[#166534] pb-10">
+        <h2 class="text-center pt-10 text-3xl font-bold text-white">Plant a Tree Today</h2>
+        <div class="w-full md:w-1/2 mx-auto flex justify-center text-center py-5">
+
+            <fieldset
+                class="fieldset text-center bg-base-200 border-base-300 rounded-xl w-6/12 border bg-[#15803D] border-none p-2 md:p-6">
+
+                <input type="email" class="input w-full" placeholder="Your Name" />
+                <input type="password" class="input w-full" placeholder="Your Email Address" />
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="input w-full">Number of Trees <i
+                            class="fa-solid fa-circle-chevron-down"></i></div>
+                    <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-full p-2 shadow-sm">
+                        <li><a>1 Tree = $5</a></li>
+                        <li><a>5 Tree = $25</a></li>
+                        <li><a>10 Tree = $5</a></li>
+                    </ul>
+                </div>
+
+                <button class="btn border-none btn-neutral mt-4 rounded-3xl text-[#15803D] bg-[#FACC15]">Donate
+                    Now</button>
+            </fieldset>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="text-center py-6 bg-[#14532D] text-white">
+            <h4>© 2025 Green Earth. All Rights Reserved.</h4>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
