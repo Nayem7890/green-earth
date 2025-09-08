@@ -122,11 +122,22 @@ const showTreesByCategory = (plants) => {
     cartContainer.innerHTML = "";
       carts.forEach(cart =>{
         cartContainer.innerHTML += `
-           <div>
-              <h2>${cart.title}</h2>
+           <div class="flex justify-between items-center my-2 py-1 px-1 md:py-3 md:px-3 bg-[#F0FDF4] rounded-xl">
+              <div>
+              <h2 class="font-bold text-sm md:text-base">${cart.title}</h2>
+               
+              </div>
+              <button onclick="handleDeleteCart('${cart.id}')" class="cursor-pointer">❌</button>
            </div>
         `
       })
+  };
+
+  const handleDeleteCart = (cartId) =>{
+        const filteredCarts = carts.filter
+        (cart => cart.id !== cartId)
+        carts = filteredCarts
+        showCarts(carts)
   }
 
 loadCategory();
