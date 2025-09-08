@@ -1,5 +1,8 @@
 const categoryContainer = document.getElementById('categoryContainer')
 const treesContainer = document.getElementById('treesContainer')
+const cartContainer = document.getElementById('cartContainer')
+
+let carts = []
 
 const loadCategory = () => {
     fetch('https://openapi.programming-hero.com/api/categories')
@@ -30,6 +33,7 @@ const showCategory = (categories) => {
 
         if (e.target.localName === 'li') {
             // console.log(e.target.id)
+             showLoading()
             e.target.classList.add('bg-[#15803D]', 'text-white')
             loadTressByCategory(e.target.id)
         }
@@ -67,9 +71,10 @@ const showTreesByCategory = (plants) => {
     plants.forEach(plant => {
         treesContainer.innerHTML += `
                         <div class="p-4 bg-white rounded-xl w-10/12 md:w-full mx-auto">
-                                <div>
-                                <img class="h-[230px] w-full rounded-md" src="${plant.image}" alt="">
+                                <div class="aspect-[4/3] md:aspect-[16/9]">
+                                <img class="h-full w-full object-cover rounded-md" src="${plant.image}" alt="">
                             </div>
+                            <div id="${plant.id}">
                             <div class="py-3" >
                                 <h2 class="text-sm font-bold">${plant.name}</h2>
                             </div>
@@ -80,10 +85,49 @@ const showTreesByCategory = (plants) => {
                             </div>
                             <button class="w-full rounded-3xl bg-[#15803D] py-3 text-white font-semibold cursor-pointer">Add to Cart</button>
                          </div>
+                         </div>
         
         `
     })
-}
+};
+
+  const showLoading = () =>{
+    treesContainer.innerHTML = `
+        <div class="col-span-3 flex items-center justify-center py-12">
+      <span class="loading loading-dots loading-xl text-[#15803D]"></span>
+      <span class="loading loading-dots loading-xl text-[#15803D]"></span>
+      <span class="loading loading-dots loading-xl text-[#15803D]"></span>
+    </div>
+    `
+  }
+
+  treesContainer.addEventListener('click', (e) => {
+      if(e.target.innerText === "Add to Cart"){
+        handleCarts(e)
+      }
+  })
+
+  const handleCarts = (e) => {
+      const title = e.target.parentNode.children[0].innerText;
+        const id = e.target.parentNode.id
+        carts.push({
+            title: title,
+            id: id
+            
+        })
+        showCarts(carts)
+  }
+
+  const showCarts = (carts) =>{
+    cartContainer.innerHTML = "";
+      carts.forEach(cart =>{
+        cartContainer.innerHTML += `
+           <div>
+              <h2>${cart.title}</h2>
+           </div>
+        `
+      })
+  }
 
 loadCategory();
 loadAllPlants();
