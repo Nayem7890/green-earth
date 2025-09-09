@@ -1,38 +1,4 @@
-
-🌴 API Endpoints
----
-1. Get 🌴All Plants
-```bash
-https://openapi.programming-hero.com/api/plants
-```
-
-2. Get 🌴All categories <br/>
-```bash
-https://openapi.programming-hero.com/api/categories
-```
-
-
-3. Get 🌴plants by categories <br/>
-```bash
-https://openapi.programming-hero.com/api/category/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/category/1
-```
-
-4. Get 🌴Plants Detail <br/>
-
-```bash
-https://openapi.programming-hero.com/api/plant/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/plant/1
-```
-
-
-1) What is the difference between var, let, and const?
+1) What is the difference between var , let, and const?
 => 
 a/ var: This is the old way. It's function-scoped and can be redeclared. That causes issues, so it's not really used anymore.
 
@@ -69,6 +35,8 @@ Arrow functions allow you to declare functions using fewer keywords.
 Standard Function: function add(a, b) { return a + b; }
 
 Arrow Function: const add = (a, b) => a + b
+
+
 
 
 4) How does destructuring assignment work in ES6?
