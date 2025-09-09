@@ -67,15 +67,25 @@
                     </ul>
                 </div>
                 <!-- Choose- Center -->
-                <div id="treesContainer" class="col-span-7 md:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 rounded-md">
-                     
-                
+                <div id="treesContainer"
+                    class="col-span-7 md:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 rounded-md">
+
+
                 </div>
-                                 <!-- Choose- Right -->
+                              <!-- Choose- Right -->
                 <div class="col-span-3 md:col-span-2 p-4 bg-white rounded-xl">
-                    <h2 class="text-sm md:text-xl font-bold">Your Cart</h2>
+                    <h2 class="text-xs md:text-xl font-bold">Your Cart</h2>
                     <div id="cartContainer">
 
+                    </div>
+                    <Div id="priceContainer">
+
+
+                    </div>
+                    <div
+                        class="text-xs md:text-xl font-bold flex justify-between items-center border-t-1 pt-1 border-gray-200">
+                        <h2 id="total-price">Total:</h2>
+                        <p>$<span id="total-price-value">0</span></p>
                     </div>
 
                 </div>
@@ -83,7 +93,7 @@
         </div>
     </section>
 
-                              <!-- About Section -->
+    <!-- About Section -->
     <section class="py-10 bg-[#F0FDF4]">
         <h2 class="text-center py-5 text-base md:text-3xl font-bold">About the Campaign</h2>
         <div class="w-7/12 mx-auto flex justify-between items-center flex-col md:flex-row">
@@ -154,6 +164,22 @@
             </fieldset>
         </div>
     </section>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box w-10/12 mx-auto">
+            <div id="detailsContainer">
+
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
 
     <!-- Footer Section -->
     <footer>
